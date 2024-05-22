@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/estilo.css">
+  <title>aprendendo js</title>
+</head>
+
+<body onresize="console.log('houve um redimencionamento')">
+
+  <h1>Aprendendo js</h1>
+
+  <h3>JSON</h3>
+  <center>
+    <input id="CEP" type="text" placeholder="Digite o seu cep">
+    <button onclick="buscarCEP()">Buscar</button>
+    <p id="sl">...</p>
+  </center>
+  <pre id="area"></pre>
+
+
+
+  <input style="padding: 50px;  font-size: 40px;" type="text" id="cor" placeholder="digite uma cor">
+  <button onclick="verificaCor()" style="padding: 70px; "> verificar</button>
+
+  <button onclick="diadasemana()" style="padding: 70px; "> calcular</button>
+
+  <button ondblclick="eventoDbClick ()">CLIQUE AQUI 2</button>
+  <br><br>
+
+  <select onchange="mudou()" id="itens">
+    <option value="1">valor1</option>
+    <option value="2">valor2</option>
+    <option value="3">valor3</option>
+    <option value="4">valor4</option>
+
+  </select>
+
+  <br><br>
+
+  <div id="teste" onmousemove="adicionaTexto()" onmouseout="viraAzul()" onmouseover="viraVermelho()"
+    style=" margin: auto auto; width: 80%; height: 200px; background: blue;"></div>
+  <br><br>
+
+  <input onkeypress="teclaPrecionada()" onblur="eventoclick()" id="campoTexto" style="padding: 80px; font-size: 40px;"
+    type="text" placeholder="digite alguma coisa" value="já vem com texto">
+
+  <p>
+
+  <h2>contole de tempo</h2>
+  <h3 id="tempo">10</h3>
+  <button onclick="ativarcontagem()" class="start">ativar contagem</button>
+  <button onclick="desativarcontagem()" class="stop">parar contagem</button>
+
+  <script>
+    document.write('<u> oi </u> ', 5 + 5); //escrito com o document.write normalmente usado para testes ele aceita tbm funções = 5+5 ele montra 10
+
+
+  </script>
+
+  </p>
+
+  <script src="./JS/index.js"></script>
+</body>
+
+</html>
